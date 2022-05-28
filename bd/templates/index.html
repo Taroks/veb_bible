@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+
+  <html lang="ru">
+  
+  <head>
+  
+      <meta charset="UTF-8">
+  
+      <title>внести книги</title>
+  
+  </head>
+  
+  <body>
+  
+  
+  
+  
+
+  
+      <form action="" method="post">
+  
+          <p>
+  
+      <label for="input">Введите книгу в следующем формате: Название, Автор(Имя Фамилия без запятой), Жанр, Краткое описание:</label>
+  
+      <input type="text" name="input">
+  
+  </p>
+  
+  <p>
+  
+      <label for="delete_name">Удалить книгу по Названию</label>
+  
+      <input type="delete_name" name="delete_name">
+  
+  </p>
+  
+  <p>
+  
+      <label for="delete_author">Удалить книги по Автору</label>
+  
+      <input type="delete_author" name="delete_author">
+  
+  </p>
+  
+  <p>
+        <label for="delete_genre">Удалить книги по Жанру</label>
+
+        <input type="delete_genre" name="delete_genre">
+    
+    </p>
+    
+    <p>
+            <input type="reset" value="Очистить">
+            
+            <input type="submit" value="применить" > 
+  </p>
+  
+      </form>
+  
+        {% if message %}
+  
+          <p>{{ message }}</p>
+  
+      {% endif %}
+  
+      
+  
+  </body>
+  
+  </html>

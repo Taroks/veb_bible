@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Найти книги</title>
+</head>
+<body>
+    <div class = "input_msg">
+        <form name = "main_form" method="post">
+            <p>По Названию<br>
+            <input type = "name" text size = 40 placeholder="Введите Название книги сюда" name = get_name></p>
+            <p>По Автору<br>
+            <input type = "author" text size = 40 placeholder="Введите Автора книг сюда" name = get_author></p>
+            <p>По Жанру<br>
+            <input type = "genre" text size = 40 placeholder="Введите Жанр книг" name = get_genre></p>
+
+            <p><input type="submit" value="вывести"></p>
+        </form>
+        <form action = '/all' name = "form" method="post">
+          <p><input type="submit" value="вывести все"></p>
+        </form>
+    </div>
+    <div class = "output_msg">
+        <p>{{otvet}}</p>
+    </div>
+</body>
+</html>
